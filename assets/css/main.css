@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background font-body text-foreground;
+}
+
+@layer components {
+  .neumorph-card {
+    @apply rounded-container bg-background shadow-extruded p-8 transition-all duration-300 ease-out;
+  }
+
+  .neumorph-card-hover {
+    @apply hover:-translate-y-1 hover:shadow-extruded-hover;
+  }
+
+  .neumorph-button {
+    @apply rounded-button bg-background shadow-extruded px-6 py-3 font-body font-medium
+           transition-all duration-300 ease-out active:shadow-inset active:translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  .neumorph-button-hover {
+    @apply hover:-translate-y-1 hover:shadow-extruded-hover;
+  }
+
+  .neumorph-inset {
+    @apply shadow-inset rounded-inner bg-background;
+  }
+
+  .neumorph-inset-deep {
+    @apply shadow-inset-deep rounded-inner bg-background;
+  }
+
+  .neumorph-icon-well {
+    @apply rounded-full shadow-inset-deep flex items-center justify-center bg-background;
+  }
+}
