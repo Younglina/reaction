@@ -1,3 +1,5 @@
 .claude
 style.md
 node_modules
+dist
+.output

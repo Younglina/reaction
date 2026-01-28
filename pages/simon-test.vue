@@ -7,7 +7,7 @@
     </div>
 
     <div class="neumorph-card mb-8">
-      <div class="flex gap-8 mb-6">
+      <div class="flex gap-8 mb-6 justify-around">
         <button
           class="neumorph-inset-deep w-32 h-32 rounded-full flex items-center justify-center transition-all duration-300 relative overflow-hidden"
           :class="{ 'shadow-extruded': leftHighlight }"
